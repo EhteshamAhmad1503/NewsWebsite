@@ -1,0 +1,204 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+
+/* Header Styles */
+.header {
+  background-color: #251e1e;
+  padding: 20px;
+  display: flex;
+  margin-right: 0%;
+  width: 1350px;
+  position: fixed;
+}
+
+.header h1 {
+  margin: auto;
+  margin: 0;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 2s linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.header h1::before {
+  content: attr(data-name);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  color: blue;
+  overflow: hidden;
+  transition: width 2s linear;
+}
+
+.header h1:hover::before {
+  width: 100%;
+}
+
+.header nav {
+  margin-top: 10px;
+  margin-left: 55%;
+}
+
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.header nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header nav li:last-child {
+  margin-right: 0;
+}
+
+.header nav a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.header nav a:hover {
+  background-color:green;
+}
+
+/* Banner Styles */
+.banner {
+  background-image: url("GymImage.jpg");
+  background-size: cover;
+  height: 700px;
+  width: 1350px;
+  color: black;
+}
+
+.banner h2 {
+  font-size: 48px;
+  text-align: center
+}
+
+.footer {
+  background-image: url("GymFooters.png");
+  height: 750px;
+  width: 1350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #251e1e;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropbtnClass {
+  background-color: #251e1e;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownClass {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contentClass {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-contentClass a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-contentClass a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdownClass:hover .dropdown-contentClass {
+  display: block;
+}
+
+.dropdownClass:hover .dropbtnClass {
+  background-color: #3e8e41;
+}
